@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console method</title>
+    <script>
+        function DeleteClick(){
+            console.warn("Delete Butten Clicked")
+            flag=confirm("Are you sure , Record will be deleted....")
+            if(flag==true){
+                alert("Record deleted.....")
+                console.error("Ok clicked and Deleted.....")
+            }else{
+                alert("Canceled.......")
+                console.log("Cancle Clicked and Cancled....")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+</body>
+</html>

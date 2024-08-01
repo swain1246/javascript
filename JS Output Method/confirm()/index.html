@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm()</title>
+    <script>
+        function DeleteClick(){
+            flag=confirm("Are you sure , Record will be deleted....")
+            if(flag==true){
+                alert("Record deleted.....")
+            }else{
+                alert("Canceled.......")
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="DeleteClick()">Delete</button>
+</body>
+</html>

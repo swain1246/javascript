@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Using Id</title>
+    <script>
+        function loadpage(){
+            document.querySelector("img").src="./assert/shoe.jpg"    //Here we use the css selector(by tag name)
+            document.querySelector("#btnRegister").value="Register"   // Here we use css selector by ID name
+            document.querySelector(".btnLogin").value="Login"         // Here we use css selector by class name
+        }
+    </script>
+</head>
+<body onload="loadpage()">
+    <div>
+        <img height="100" width="100" border="1" id="picture">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h3>Registration</h3>
+            UserName : <input type="text"><input type="button" id="btnRegister">
+        </form>
+    </div>.
+    <div>
+        <form name="frmLogin">
+            <h3>Login</h3>
+            Login : <input type="text"><input type="button" id="btnLogin" class="btnLogin">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Mode</title>
+    <script>
+
+        /*a=10
+        document.write("a = "+a)    */
+
+        // In the above 2 line we don't turn on the strict mode for that the code execute without error.
+
+
+        /*"use strict"
+        a=10
+        document.write("a = "+a)    */    
+
+        // above we turn on the strict mode for that it through error like "Error: a is not defined " in the console.
+
+
+        "use strict"
+        var a;
+        a=10;
+        document.write("a = "+a);
+
+        // The above code is in the correct manner
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using DOM Hieraecchy</title>
+    <script>
+        function bodyload(){
+           window.document.images[0].src="./assert/shoe.jpg" 
+           window.document.forms[0].elements[1].value="Register"
+           window.document.forms[1].elements[1].value="Login"
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img height="100" width="100" border="1">
+    </div>
+    <div>
+        <form>
+            <h3>Registration</h3>
+            UserName : <input type="text"><input type="button">
+        </form>
+    </div>.
+    <div>
+        <form>
+            <h3>Login</h3>
+            Login : <input type="text"><input type="button">
+        </form>
+    </div>
+</body>
+</html>

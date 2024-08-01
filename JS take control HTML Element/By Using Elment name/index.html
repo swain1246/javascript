@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Using Element UserName</title>
+    <script>
+        function loadpage(){
+            picture.src="./assert/shoe.jpg"
+
+            /* btnRegister.value="Register"   This statement is not work because we can't acces clild directly*/
+            
+            frmRegister.btnRegister.value="Register"
+            frmLogin.btnLogin.value="Login"
+        }
+    </script>
+</head>
+<body onload="loadpage()">
+    <div>
+        <img height="100" width="100" border="1" name="picture">
+    </div>
+    <div>
+        <form name="frmRegister">
+            <h3>Registration</h3>
+            UserName : <input type="text"><input type="button" name="btnRegister">
+        </form>
+    </div>.
+    <div>
+        <form name="frmLogin">
+            <h3>Login</h3>
+            Login : <input type="text"><input type="button" name="btnLogin">
+        </form>
+    </div>
+</body>
+</html>
