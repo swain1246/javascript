@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+    <script>
+        function CreateClick(){
+            foldername=prompt("Enter Folder Name:")
+            /*foldername=prompt("Enter Folder Name:","New_Folder")*/   // The New_Folder is the defualt name, whenever user will not fill the form without any name it takes the defualt folder name.
+            if(foldername==null){
+                alerrt("You Cancelded.....");
+            }else if(foldername==""){
+                alert("Please Enter Folder Name....")
+            }else{
+                /*document.querySelector("p").innerHTML="Folder Created: "+foldername;*/
+                document.querySelector("p").innerHTML+="Folder Created: "+foldername+"</br>";   // For having the privious folder names
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="CreateClick()">Create Folder</button>
+    <p></p>
+</body>
+</html>
