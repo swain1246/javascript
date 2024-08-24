@@ -1,0 +1,17 @@
+[
+    {
+        "Name":"Nike Casuals",
+        "Price":4500.54,
+        "Photo":"../assert/shoe.jpg"
+    },
+    {
+        "Name":"Winter Jacket",
+        "Price":5000.54,
+        "Photo":"../assert/shoe.jpg"
+    },
+    {
+        "Name":"Lee Boot",
+        "Price":3000.54,
+        "Photo":"../assert/shoe.jpg"
+    }
+]

@@ -27,10 +27,17 @@
 
         function addClick(){
             var categoryName = document.getElementById("txtCategory").value; 
-            categories.push(categoryName);
-            LoadCategories();
-            alert(`${categoryName} Added to the List`)
-            document.getElementById("txtCategory").value="";
+
+            if(categories.indexOf(categoryName)==-1){
+                categories.push(categoryName);
+                LoadCategories();
+                alert(`${categoryName} Added to the List`)
+                document.getElementById("txtCategory").value="";
+            }else{
+                alert(`${categoryName} Exists`)
+            }
+
+            
         }
 
         function RemoveClick(){
